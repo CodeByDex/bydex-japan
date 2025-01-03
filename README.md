@@ -2,6 +2,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+You will need to configure the following environment variables:
+
+NEXT_PUBLIC_basePath=[value required for where the website is going to be hosted, blank for local should work, if using github pages would be the name of the repo]
+
 First, run the development server:
 
 ```bash
