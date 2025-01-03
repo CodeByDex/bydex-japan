@@ -26,4 +26,7 @@ export type character = {
     meaning: string;
     mnemonic: string;
     note: string;
+    JLPT: 1 | 2 | 3 | 4 | 5;
+    grade: 1 | 2 | 3 | 4 | 5 | 6 | 7;
+    AP: boolean;
 }
