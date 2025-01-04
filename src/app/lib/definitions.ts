@@ -8,7 +8,7 @@ export type reading = {
     id: string;
     kana: string;
     romanji: string;
-    type: readingType;
+    type?: readingType;
     meaning?: string;
 }
 
@@ -30,5 +30,5 @@ export type character = {
     JLPT: 1 | 2 | 3 | 4 | 5;
     grade: 1 | 2 | 3 | 4 | 5 | 6 | 7;
     AP: boolean;
-    examples: string[]
+    examples: reading[]
 }
