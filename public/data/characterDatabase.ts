@@ -4,6 +4,7 @@ const characters: character[] = [
 /********************************************************************************************/
 // #region Katakana
 /*********************************************************************************************/
+// AIUEO
     {
         id: "ア",
         type: characterType.katakana,
@@ -129,6 +130,7 @@ const characters: character[] = [
                 meaning: "omlet"
             }]
     },
+//kakikukeko
     {
         id: "カ",
         type: characterType.katakana,
@@ -241,6 +243,132 @@ const characters: character[] = [
             }
         ],
         radical: ['弓'],
+        stroke: 2,
+        note: "",
+        JLPT: 5,
+        grade: 1,
+        AP: true,
+        examples: [
+            {
+                id: "コーヒー",
+                kana: "コーヒー",
+                romanji: "koohii",
+                meaning: "Coffee"
+            }]
+    },
+//sasisuseso
+    {
+        id: "サ",
+        type: characterType.katakana,
+        readings: [
+            {
+                id: "サ",                
+                kana: "サ",
+                romanji: "sa",
+                type: readingType.kana,
+            }
+        ],
+        radical: ['散'],
+        stroke: 0,
+        note: "",
+        JLPT: 5,
+        grade: 1,
+        AP: true,
+        examples: [
+            {
+                id: "コーヒー",
+                kana: "コーヒー",
+                romanji: "koohii",
+                meaning: "Coffee"
+            }]
+    },
+    {
+        id: "シ",
+        type: characterType.katakana,
+        readings: [
+            {
+                id: "シ",                
+                kana: "シ",
+                romanji: "si",
+                type: readingType.kana,
+            }
+        ],
+        radical: ['之'],
+        stroke: 2,
+        note: "",
+        JLPT: 5,
+        grade: 1,
+        AP: true,
+        examples: [
+            {
+                id: "コーヒー",
+                kana: "コーヒー",
+                romanji: "koohii",
+                meaning: "Coffee"
+            }]
+    },
+    {
+        id: "ス",
+        type: characterType.katakana,
+        readings: [
+            {
+                id: "ス",                
+                kana: "ス",
+                romanji: "su",
+                type: readingType.kana,
+            }
+        ],
+        radical: ['須'],
+        stroke: 2,
+        note: "",
+        JLPT: 5,
+        grade: 1,
+        AP: true,
+        examples: [
+            {
+                id: "コーヒー",
+                kana: "コーヒー",
+                romanji: "koohii",
+                meaning: "Coffee"
+            }]
+    },
+    {
+        id: "セ",
+        type: characterType.katakana,
+        readings: [
+            {
+                id: "セ",                
+                kana: "セ",
+                romanji: "se",
+                type: readingType.kana,
+            }
+        ],
+        radical: ['世'],
+        stroke: 2,
+        note: "",
+        JLPT: 5,
+        grade: 1,
+        AP: true,
+        examples: [
+            {
+                id: "コーヒー",
+                kana: "コーヒー",
+                romanji: "koohii",
+                meaning: "Coffee"
+            }]
+    },
+    {
+        id: "ソ",
+        type: characterType.katakana,
+        readings: [
+            {
+                id: "ソ",                
+                kana: "ソ",
+                romanji: "so",
+                type: readingType.kana,
+            }
+        ],
+        radical: ['曽'],
         stroke: 2,
         note: "",
         JLPT: 5,
