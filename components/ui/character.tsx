@@ -18,9 +18,9 @@ export function ReadingComponent({ reading }: ReadingComponentProps) {
         {reading.id}
       </div>
       <div className='p-2'>
-        {reading.type != "kana" ? <p><strong>Kana:</strong> {reading.kana}</p> : <></>}
+        {reading.type && reading.type != "kana" ? <p><strong>Kana:</strong> {reading.kana}</p> : <></>}
         <p><strong>Romanji:</strong> {reading.romanji}</p>
-        {reading.type != "kana" ? <p><strong>Type:</strong> {reading.type}</p> : <></>}
+        {reading.type && reading.type != "kana" ? <p><strong>Type:</strong> {reading.type}</p> : <></>}
         {reading.meaning ? <p><strong>Meaning:</strong> {reading.meaning}</p> : <></>}
       </div>
     </div>
@@ -48,14 +48,9 @@ export default function CharacterComponent({ character }: CharacterComponentProp
         <p><strong>Grade:</strong> {character.grade}</p>
         <p><strong>Advanced Placement:</strong> {character.AP ? 'Yes' : 'No'}</p>
         <p><strong>Examples:</strong></p>
-        <ul>
-          {/* {character.examples.map((example, index) => (
-          <li key={index}>
-            Kana: {example.kana}, Romaji: {example.romaji}
-          </li>
-        ))} */}
-          {character.examples.join(', ')}
-        </ul>
+        <p>{character.examples.map(x => (
+          <ReadingComponent reading={x} key={x.id} />
+        ))}</p>        
       </div>
     </div >
   );
