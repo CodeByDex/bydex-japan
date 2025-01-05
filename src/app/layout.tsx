@@ -4,6 +4,13 @@ import "@/app/globals.css";
 
 import {NavBar} from "./navbar";
 
+import type { Viewport } from 'next'
+ 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1
+}
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
