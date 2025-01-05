@@ -1,12 +1,14 @@
 import characters from "../../../public/data/characterDatabase";
-// import { character } from "@components/ui/character"
+import CharacterComponent from "@components/ui/character"
 
 export default function Page() {
     return (
-        <div>
-            <p>Under Construction - List of Characters</p>;
+        <div className="flex flex-wrap gap-4">
+            <p>Under Construction - List of Characters</p>
             {characters.map(x => (
-                <li key={x.id}>{x.id}</li>
+                <div key={x.id} className="flex-a basis-1/4 max-w-1/4 p-4 border rounded-lg">
+                    <CharacterComponent character={x}  />
+                </div>
             ))}
         </div>
     )

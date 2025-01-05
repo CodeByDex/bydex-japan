@@ -1,7 +1,7 @@
 export enum readingType {
-    on,
-    kun,
-    kana
+    on = "on",
+    kun = "kun",
+    kana = "kana"
 }
 
 export type reading = {
@@ -13,9 +13,9 @@ export type reading = {
 }
 
 export enum characterType {
-    hiragana,
-    katakana,
-    kanji
+    hiragana = "hiragana",
+    katakana = "katakana",
+    kanji = "kanji"
 }
 
 export type character = {
