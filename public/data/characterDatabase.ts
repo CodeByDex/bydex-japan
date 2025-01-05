@@ -1,4 +1,4 @@
-import { readingType, characterType, reading, character } from "@/app/lib/definitions";
+import { readingType, characterType, reading, character } from "../../lib/definitions";
 
 const characters: character[] = [
 /********************************************************************************************/
