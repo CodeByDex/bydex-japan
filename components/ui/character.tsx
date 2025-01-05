@@ -1,10 +1,30 @@
 'use client';
 
 import React from 'react';
-import { character } from '@lib/definitions';
+import { character, reading } from '@lib/definitions';
 
 interface CharacterComponentProps {
   character: character;
+}
+
+interface ReadingComponentProps {
+  reading: reading
+}
+
+export function ReadingComponent({ reading }: ReadingComponentProps) {
+  return (
+    <div className='flex'>
+      <div className='flex items-center justify-center p-2'>
+        {reading.id}
+      </div>
+      <div className='p-2'>
+        {reading.type != "kana" ? <p><strong>Kana:</strong> {reading.kana}</p> : <></>}
+        <p><strong>Romanji:</strong> {reading.romanji}</p>
+        {reading.type != "kana" ? <p><strong>Type:</strong> {reading.type}</p> : <></>}
+        {reading.meaning ? <p><strong>Meaning:</strong> {reading.meaning}</p> : <></>}
+      </div>
+    </div>
+  )
 }
 
 export default function CharacterComponent({ character }: CharacterComponentProps) {
@@ -16,14 +36,9 @@ export default function CharacterComponent({ character }: CharacterComponentProp
       <div className='p-4'>
         <p><strong>Type:</strong> {character.type}</p>
         <p><strong>Readings:</strong></p>
-        <ul>
-          {/* {character.readings.map((reading, index) => (
-          <li key={index}>
-            Kana: {reading.kana}, Romaji: {reading.romaji}
-          </li>
-        ))} */}
-          {character.readings.join(', ')}
-        </ul>
+        <p>{character.readings.map(x => (
+          <ReadingComponent reading={x} key={x.id} />
+        ))}</p>
         <p><strong>Radical:</strong> {character.radical.join(', ')}</p>
         <p><strong>Stroke Count:</strong> {character.stroke}</p>
         {character.meaning && <p><strong>Meaning:</strong> {character.meaning}</p>}
@@ -40,7 +55,7 @@ export default function CharacterComponent({ character }: CharacterComponentProp
           </li>
         ))} */}
           {character.examples.join(', ')}
-          </ul>
+        </ul>
       </div>
     </div >
   );
