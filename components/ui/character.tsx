@@ -30,7 +30,7 @@ export function ReadingComponent({ reading }: ReadingComponentProps) {
 export default function CharacterComponent({ character }: CharacterComponentProps) {
   return (
     <div className='flex'>
-      <div className='flex items-center justify-center p-4 text-9xl w-1/3'>
+      <div className='flex items-center justify-center p-4 text-8xl w-1/3'>
         {character.id}
       </div>
       <div className='p-4 w-2/3'>
