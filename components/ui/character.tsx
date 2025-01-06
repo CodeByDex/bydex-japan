@@ -48,9 +48,9 @@ export default function CharacterComponent({ character }: CharacterComponentProp
       <div className='p-4 w-2/3'>
         <p><strong>Type:</strong> {character.type}</p>
         <p><strong>Readings:</strong></p>
-        <p>{character.readings.map(x => (
+        {character.readings.map(x => (
           <ReadingComponent reading={x} key={x.id} />
-        ))}</p>
+        ))}
         <p><strong>Radical:</strong> {character.radical.join(', ')}</p>
         <p><strong>Stroke Count:</strong> {character.stroke}</p>
         {character.meaning && <p><strong>Meaning:</strong> {character.meaning}</p>}
@@ -60,9 +60,9 @@ export default function CharacterComponent({ character }: CharacterComponentProp
         {character.mnemonic && <p><strong>Mnemonic:</strong> {character.mnemonic}</p>}
         {character.note && <p><strong>Note:</strong> {character.note}</p> }
         <p><strong>Examples:</strong></p>
-        <p>{character.examples.map(x => (
+        {character.examples.map(x => (
           <ReadingComponent reading={x} key={x.id} />
-        ))}</p>        
+        ))}      
       </div>
     </div >
   );
