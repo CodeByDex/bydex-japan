@@ -6,7 +6,7 @@ export default function Page() {
         <div className="flex flex-wrap gap-4">
             <p>Under Construction - List of Characters</p>
             {characters.map(x => (
-                <div key={x.id} className="flex-a basis-1/4 max-w-1/4 p-4 border rounded-lg">
+                <div key={x.id} className="flex flex-col basis-1/4 max-w-1/4 min-w-[300px] p-4 border rounded-lg">
                     <CharacterComponent character={x}  />
                 </div>
             ))}

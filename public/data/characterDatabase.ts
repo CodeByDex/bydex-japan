@@ -461,19 +461,22 @@ const characters: character[] = [
             {
                 id: "一月",
                 kana: "いちがつ",
-                romanji: "ichigatsu",
+                romanji: "ICHIgatsu",
+                type: readingType.on,
                 meaning: "January"
             },
             {
                 id: "一番",
                 kana: "いちばん",
-                romanji: "ichiban",
+                romanji: "ICHIban",
+                type: readingType.on,
                 meaning: "first, best"
             },
             {
                 id: "一冊",
                 kana: "いっさつ",
-                romanji: "issatsu",
+                romanji: "Issatsu",
+                type: readingType.on,
                 meaning: "one periodical (book, magazine, etc.)"
             },
         ]
