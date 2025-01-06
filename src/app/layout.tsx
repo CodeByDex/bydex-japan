@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
+import {CheckStorage} from "@components/io/dataaccess"
 
-import {NavBar} from "./navbar";
+
+
+import { NavBar } from "./navbar";
 
 import type { Viewport } from 'next'
- 
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1
@@ -39,6 +42,7 @@ export default function RootLayout({
         <NavBar />
         {children}
       </body>
+      <CheckStorage />
     </html>
   );
 }

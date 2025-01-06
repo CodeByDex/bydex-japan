@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import {useState} from 'react'
 import { character, reading } from '@lib/definitions';
 
 interface CharacterComponentProps {
@@ -12,17 +13,28 @@ interface ReadingComponentProps {
 }
 
 export function ReadingComponent({ reading }: ReadingComponentProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+  
   return (
     <div className='flex'>
-      <div className='flex items-center justify-center p-2 whitespace-nowrap'>
+      <div 
+        className='flex items-center justify-center p-2 whitespace-nowrap'
+        onClick={toggleExpand}
+      >
         {reading.id}
       </div>
-      <div className='p-2'>
-        {reading.type && reading.type != "kana" ? <p><strong>Kana:</strong> {reading.kana}</p> : <></>}
-        <p><strong>Romanji:</strong> {reading.romanji}</p>
-        {reading.type && reading.type != "kana" ? <p><strong>Type:</strong> {reading.type}</p> : <></>}
-        {reading.meaning ? <p><strong>Meaning:</strong> {reading.meaning}</p> : <></>}
-      </div>
+      {isExpanded && (
+        <div className='p-2'>
+          {reading.type && reading.type != "kana" ? <p><strong>Kana:</strong> {reading.kana}</p> : <></>}
+          <p><strong>Romanji:</strong> {reading.romanji}</p>
+          {reading.type && reading.type != "kana" ? <p><strong>Type:</strong> {reading.type}</p> : <></>}
+          {reading.meaning ? <p><strong>Meaning:</strong> {reading.meaning}</p> : <></>}
+        </div>
+      )}
     </div>
   )
 }
