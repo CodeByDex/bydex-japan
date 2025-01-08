@@ -1,6 +1,6 @@
 import characters from "../../../public/data/characterDatabase";
 import FlashcardComponent from "@components/ui/flashcard";
-import { ReadingComponent } from "@components/ui/character";
+import { LargeCharacter, CharacterInfo } from "@components/ui/character";
 
 function getRandomItem<T>(array: T[]): T {
     const randomIndex = Math.floor(Math.random() * array.length);
@@ -13,6 +13,6 @@ function getRandomItem<T>(array: T[]): T {
 
     return (
         <FlashcardComponent 
-            prompt={<div>{item.id}</div>} answer={<ReadingComponent reading={item.readings[0]} /> } />
+            prompt={<div>{<LargeCharacter char={item.id} className=""/>}</div>} answer={<CharacterInfo character={item} className="" /> } />
     )
 }

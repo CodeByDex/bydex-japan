@@ -11,7 +11,7 @@ export default function FlashcardComponent({prompt, answer}: FlashcardProps){
     const [showPrompt, setShowPrompt] = useState(true);
 
     const handleClick = () => {
-      setShowPrompt(!showPrompt);
+      setShowPrompt(false);
     };
   
     return (
