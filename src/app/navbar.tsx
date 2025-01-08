@@ -9,6 +9,16 @@ export function NavBar() {
     const pathName = usePathname();
     return (
         <nav>
+        <Link
+            href={"."}
+            className={clsx(
+                '',
+                {
+                    'text-blue-600': pathName === "."
+                }
+            )}            >
+            Home
+        </Link>
             <Link
                 href={"./character"}
                 className={clsx(
@@ -19,15 +29,14 @@ export function NavBar() {
                 )}>
                 Characters
             </Link>
-            <Link
-                href={"."}
+            <Link href={"./quiz"}
                 className={clsx(
                     '',
                     {
-                        'text-blue-600': pathName === "."
+                        'text-blue-600': pathName === "./character"
                     }
-                )}            >
-                Home
+                )}>
+                Quiz
             </Link>
         </nav>
     )
