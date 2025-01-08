@@ -4,7 +4,7 @@ import React from 'react';
 import {useState} from 'react'
 import { character, reading } from '@lib/definitions';
 
-interface CharacterComponentProps {
+interface CharacterProps {
   character: character;
 }
 
@@ -39,7 +39,7 @@ export function ReadingComponent({ reading }: ReadingComponentProps) {
   )
 }
 
-export default function CharacterComponent({ character }: CharacterComponentProps) {
+export default function CharacterFullInfo({ character }: CharacterProps) {
   return (
     <div className='flex'>
       <div className='flex items-center justify-center p-4 text-8xl w-1/3'>

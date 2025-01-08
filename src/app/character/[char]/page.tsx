@@ -1,5 +1,5 @@
 import characters from "../../../../public/data/characterDatabase"
-import CharacterComponent from "@components/ui/character"
+import CharacterFullInfo from "@components/ui/character"
 
 export default async function Page({
     params,
@@ -12,7 +12,7 @@ export default async function Page({
     if (!character)
         return <div>Unable to find {char}</div>
     else
-        return (<CharacterComponent character={character} />)
+        return (<CharacterFullInfo character={character} />)
   }
 
   export async function generateStaticParams() {
