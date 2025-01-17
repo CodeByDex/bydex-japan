@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 export function NavBar() {
     const pathName = usePathname();
     return (
-        <nav>
+        <nav className='flex'>
             <Link
                 href={"/"}
                 className={clsx(
@@ -17,7 +17,7 @@ export function NavBar() {
                         'text-blue-600': pathName === "."
                     }
                 )}            >
-                Home
+                Kanado
             </Link>
             <Link
                 href={"/character"}
