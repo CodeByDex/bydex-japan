@@ -1,12 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
     return (
         <footer className="flex gap-6 flex-wrap items-center justify-center">
-        <a
+        <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
+          href="/sources"
           rel="noopener noreferrer"
         >
           <Image
@@ -16,26 +16,11 @@ export function Footer() {
             width={16}
             height={16}
           />
-          Learn
-        </a>
+          Sources
+        </Link>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src={`${process.env.NEXT_PUBLIC_basePath}/window.svg`}
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://github.com/CodeByDex/bydex-japan"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -46,7 +31,7 @@ export function Footer() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Support this App
         </a>
       </footer>
     )
