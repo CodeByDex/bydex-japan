@@ -19,7 +19,7 @@ export default function FlashcardComponent(
     };
   
     return (
-      <div onClick={handleClick}>
+      <div onClick={handleClick} className="card w-fit">
         <div>{showPrompt ? prompt : answer}</div>
       </div>
     );
