@@ -5,12 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #201e30;
+  --accent: #c6c6fd;
+  --accent2: #797999;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #201e30;
     --foreground: #ededed;
+    --accent: #2a283f;
+    --accent2: #46426a;
   }
 }
 
@@ -21,5 +25,29 @@ body {
 }
 
 .card {
-  @apply p-4 border rounded-lg
+  @apply p-4 border rounded-lg;
 }
+
+.button {
+  background-color: var(--accent);
+  @apply p-2 mt-2 mr-2 rounded-lg;
+}
+
+.button:hover {
+  background-color: var(--accent2);
+}
+
+nav {
+  @apply mb-2 p-2 min-h-5;
+  background-color: var(--accent);
+}
+
+nav a {
+  background-color: var(--background);
+  @apply m-2 p-2 rounded-lg;
+}
+
+nav a:hover {
+  background-color: var(--accent2);
+}
+
