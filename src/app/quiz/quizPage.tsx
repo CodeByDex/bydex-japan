@@ -15,22 +15,38 @@ interface QuizPageProps {
 }
 
 export default function QuizPage({ filteredCharacters }: QuizPageProps) {
-  const [item, setItem] = useState<character | null>(null);
+  const [quizChar, setQuizChar] = useState<character | null>(null);
   const [mounted, setMounted] = useState(false);
+  const [showPrompt, setShowPrompt] = useState<boolean>(true);
 
   useEffect(() => {
-    setItem(getRandomItem(filteredCharacters));
+    setQuizChar(getRandomItem(filteredCharacters));
     setMounted(true);
   }, [filteredCharacters]);
 
-  if (!mounted || !item) {
+  if (!mounted || !quizChar) {
     return <div>Loading...</div>;
   }
 
+  const loadNewCard = () => {
+    setQuizChar(getRandomItem(filteredCharacters)); // Load a random character
+    setShowPrompt(true); // Show the prompt again for the new card
+  };
+
   return (
-    <FlashcardComponent
-      prompt={<LargeCharacter char={item.id} className="" />}
-      answer={<CharacterInfo character={item} className="" />}
-    />
+    <div>
+      <FlashcardComponent
+        prompt={<LargeCharacter char={quizChar.id} className="" />}
+        answer={<CharacterInfo character={quizChar} className="" />}
+        showPrompt={showPrompt}
+        setShowPrompt={setShowPrompt}
+      />
+      <button
+        onClick={loadNewCard}
+        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mt-4"
+      >
+        Load New Card
+      </button>
+    </div>
   );
 }
