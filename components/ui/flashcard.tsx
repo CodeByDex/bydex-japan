@@ -1,7 +1,5 @@
 "use client"
 
-import React, { useState } from 'react';
-
 type FlashcardProps = {
   prompt: React.ReactNode;
   answer: React.ReactNode;
