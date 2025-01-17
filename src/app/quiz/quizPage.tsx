@@ -1,6 +1,5 @@
 "use client";
 
-import characters from "../../../public/data/characterDatabase";
 import FlashcardComponent from "@components/ui/flashcard";
 import { LargeCharacter, CharacterInfo } from "@components/ui/character";
 import { useEffect, useState } from "react";
@@ -12,21 +11,20 @@ function getRandomItem<T>(array: T[]): T {
 }
 
 interface QuizPageProps {
-  filterFn?: (char: character) => boolean; // Optional filter function
+  filteredCharacters: character[]; // Pass filtered characters directly
 }
 
-export default function QuizPage({ filterFn }: QuizPageProps) {
+export default function QuizPage({ filteredCharacters }: QuizPageProps) {
   const [item, setItem] = useState<character | null>(null);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const filteredCharacters = filterFn ? characters.filter(filterFn) : characters;
     setItem(getRandomItem(filteredCharacters));
-    setMounted(true); // Set mounted to true after the component mounts
-  }, [filterFn]);
+    setMounted(true);
+  }, [filteredCharacters]);
 
   if (!mounted || !item) {
-    return <div>Loading...</div>; // You can replace this with a skeleton loader
+    return <div>Loading...</div>;
   }
 
   return (

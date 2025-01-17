@@ -1,5 +1,6 @@
 import QuizPage from "./quizPage";
+import characters from "../../../public/data/characterDatabase"
 
-export default function QuizAll() {
-  return <QuizPage filterFn={undefined} />; // No filter, use all characters
+export default function QuizKanji() {
+  return <QuizPage filteredCharacters={characters} />;
 }
