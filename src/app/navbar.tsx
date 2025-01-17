@@ -10,7 +10,7 @@ export function NavBar() {
     return (
         <nav>
         <Link
-            href={"."}
+            href={"/"}
             className={clsx(
                 '',
                 {
@@ -20,7 +20,7 @@ export function NavBar() {
             Home
         </Link>
             <Link
-                href={"./character"}
+                href={"/character"}
                 className={clsx(
                     '',
                     {
@@ -29,7 +29,7 @@ export function NavBar() {
                 )}>
                 Characters
             </Link>
-            <Link href={"./quiz"}
+            <Link href={"/quiz"}
                 className={clsx(
                     '',
                     {
