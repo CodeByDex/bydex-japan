@@ -6,7 +6,7 @@ export default function Page() {
     return (
         <div className="flex flex-wrap gap-4">
             {characters.map(x => (
-                <div key={x.id} className="flex flex-col basis-1/4 max-w-1/4 min-w-[300px] p-4 border rounded-lg">
+                <div key={x.id} className="flex flex-col basis-1/4 max-w-1/4 min-w-[300px] card">
                     <Link href={`./character/${x.id}`}>
                         <CharacterFullInfo character={x}  />                    
                     </Link>

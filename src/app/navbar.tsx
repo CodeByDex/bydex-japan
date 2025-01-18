@@ -8,17 +8,17 @@ import { usePathname } from 'next/navigation';
 export function NavBar() {
     const pathName = usePathname();
     return (
-        <nav>
-        <Link
-            href={"/"}
-            className={clsx(
-                '',
-                {
-                    'text-blue-600': pathName === "."
-                }
-            )}            >
-            Home
-        </Link>
+        <nav className='flex'>
+            <Link
+                href={"/"}
+                className={clsx(
+                    '',
+                    {
+                        'text-blue-600': pathName === "."
+                    }
+                )}            >
+                Kanado
+            </Link>
             <Link
                 href={"/character"}
                 className={clsx(

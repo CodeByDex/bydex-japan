@@ -6,6 +6,7 @@ import {CheckStorage} from "@components/io/dataaccess"
 
 
 import { NavBar } from "./navbar";
+import { Footer } from "./footer";
 
 import type { Viewport } from 'next'
 
@@ -40,7 +41,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
-        {children}
+        {/* <div className="min-h-screen h-fit"> */}
+        <div className="items-center justify-items-center p-8 pb-20 gap-16 sm:p-20">
+          {children}
+        </div>
+        {/* </div> */}
+        <Footer />
       </body>
       <CheckStorage />
     </html>
