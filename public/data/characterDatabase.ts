@@ -268,18 +268,18 @@ const characters: character[] = [
                 type: readingType.kana,
             }
         ],
-        radical: ['散'],
-        stroke: 0,
+        radical: ['左'],
+        stroke: 3,
         note: "",
         JLPT: 5,
         grade: 1,
         AP: true,
         examples: [
             {
-                id: "コーヒー",
-                kana: "コーヒー",
-                romanji: "koohii",
-                meaning: "Coffee"
+                id: "サラダ",
+                kana: "サラダ",
+                romanji: "sarada",
+                meaning: "salad"
             }]
     },
     {
@@ -294,17 +294,17 @@ const characters: character[] = [
             }
         ],
         radical: ['之'],
-        stroke: 2,
+        stroke: 3,
         note: "",
         JLPT: 5,
         grade: 1,
         AP: true,
         examples: [
             {
-                id: "コーヒー",
-                kana: "コーヒー",
-                romanji: "koohii",
-                meaning: "Coffee"
+                id: "シャンプー",
+                kana: "シャンプー",
+                romanji: "syanpuu",
+                meaning: "shampoo"
             }]
     },
     {
@@ -318,7 +318,7 @@ const characters: character[] = [
                 type: readingType.kana,
             }
         ],
-        radical: ['須'],
+        radical: ['寸'],
         stroke: 2,
         note: "",
         JLPT: 5,
@@ -326,10 +326,10 @@ const characters: character[] = [
         AP: true,
         examples: [
             {
-                id: "コーヒー",
-                kana: "コーヒー",
-                romanji: "koohii",
-                meaning: "Coffee"
+                id: "スーパー",
+                kana: "スーパー",
+                romanji: "suupaa",
+                meaning: "supermarket"
             }]
     },
     {
@@ -351,10 +351,10 @@ const characters: character[] = [
         AP: true,
         examples: [
             {
-                id: "コーヒー",
-                kana: "コーヒー",
-                romanji: "koohii",
-                meaning: "Coffee"
+                id: "セーター",
+                kana: "セーター",
+                romanji: "seetaa",
+                meaning: "sweater"
             }]
     },
     {
@@ -376,13 +376,67 @@ const characters: character[] = [
         AP: true,
         examples: [
             {
-                id: "コーヒー",
-                kana: "コーヒー",
-                romanji: "koohii",
-                meaning: "Coffee"
+                id: "ソファー",
+                kana: "ソファー",
+                romanji: "sofuaa",
+                meaning: "sofa"
             }]
     },
+/**
+ * Here’s a list of katakana characters, their origin kanji, stroke count, and an example word using the katakana:
 
+| **Katakana** | **Origin Kanji** | **Stroke Count** | **Example Word** |
+|--------------|------------------|------------------|------------------|
+| ア (a)       | 阿               | 2                | アメリカ (America) |
+| イ (i)       | 伊               | 2                | イギリス (England) |
+| ウ (u)       | 宇               | 3                | ウサギ (rabbit) |
+| エ (e)       | 江               | 3                | エネルギー (energy) |
+| オ (o)       | 於               | 3                | オレンジ (orange) |
+| カ (ka)      | 加               | 2                | カメラ (camera) |
+| キ (ki)      | 幾               | 3                | キャンプ (camp) |
+| ク (ku)      | 久               | 2                | クッキー (cookie) |
+| ケ (ke)      | 介               | 3                | ケーキ (cake) |
+| コ (ko)      | 己               | 2                | コーヒー (coffee) |
+| サ (sa)      | 左               | 3                | サラダ (salad) |
+| シ (shi)     | 之               | 3                | シャンプー (shampoo) |
+| ス (su)      | 寸               | 2                | スーパー (supermarket) |
+| セ (se)      | 世               | 3                | セーター (sweater) |
+| ソ (so)      | 曽               | 2                | ソファー (sofa) |
+| タ (ta)      | 多               | 3                | タクシー (taxi) |
+| チ (chi)     | 千               | 3                | チーズ (cheese) |
+| ツ (tsu)     | 川               | 3                | ツナ (tuna) |
+| テ (te)      | 天               | 4                | テレビ (television) |
+| ト (to)      | 止               | 2                | トマト (tomato) |
+| ナ (na)      | 奈               | 2                | ナイフ (knife) |
+| ニ (ni)      | 二               | 2                | ニュース (news) |
+| ヌ (nu)      | 奴               | 2                | ヌードル (noodle) |
+| ネ (ne)      | 祢               | 4                | ネクタイ (necktie) |
+| ノ (no)      | 乃               | 1                | ノート (notebook) |
+| ハ (ha)      | 八               | 2                | ハンバーガー (hamburger) |
+| ヒ (hi)      | 比               | 2                | ヒーター (heater) |
+| フ (fu)      | 不               | 1                | フルーツ (fruit) |
+| ヘ (he)      | 部               | 1                | ヘリコプター (helicopter) |
+| ホ (ho)      | 保               | 4                | ホテル (hotel) |
+| マ (ma)      | 万               | 2                | マンガ (manga) |
+| ミ (mi)      | 三               | 3                | ミルク (milk) |
+| ム (mu)      | 牟               | 2                | ムービー (movie) |
+| メ (me)      | 女               | 2                | メニュー (menu) |
+| モ (mo)      | 毛               | 3                | モーター (motor) |
+| ヤ (ya)      | 也               | 2                | ヤクルト (Yakult) |
+| ユ (yu)      | 由               | 2                | ユニフォーム (uniform) |
+| ヨ (yo)      | 与               | 3                | ヨーグルト (yogurt) |
+| ラ (ra)      | 良               | 2                | ラーメン (ramen) |
+| リ (ri)      | 利               | 2                | リモコン (remote control) |
+| ル (ru)      | 流               | 2                | ルビー (ruby) |
+| レ (re)      | 礼               | 1                | レモン (lemon) |
+| ロ (ro)      | 呂               | 3                | ロボット (robot) |
+| ワ (wa)      | 和               | 2                | ワイン (wine) |
+| ヲ (wo)      | 乎               | 3                | ヲタク (otaku) |
+| ン (n)       | 尓               | 2                | マンション (mansion) |
+
+Let me know if you'd like more examples or further details!
+ * 
+ */
 // #endregion
 /********************************************************************************************/
 // #region Hiragana
