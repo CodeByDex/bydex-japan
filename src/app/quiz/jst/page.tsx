@@ -3,7 +3,8 @@
 import jstVocab from "../../../../public/data/vocabularyDatabase";
 import { reading } from "@lib/definitions";
 import FlashcardComponent from "@components/ui/flashcard";
-import { LargeCharacter, VocabularyComponent } from "@components/ui/character";
+import { LargeCharacter } from "@components/ui/character";
+import { VocabularyComponent } from '@components/ui/vocabulary';
 import { useEffect, useState } from "react";
 
 function getRandomItem<T>(array: T[]): T {

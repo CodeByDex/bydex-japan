@@ -31,16 +31,6 @@ export function ReadingComponent({ reading }: {reading: reading}) {
   )
 }
 
-export function VocabularyComponent({ reading }: {reading: reading}) {
-  return (
-    <div className='flex'>
-        <div className='p-2'>
-          {reading.meaning ? <p><strong>Meaning:</strong> {reading.meaning}</p> : <></>}
-        </div>
-    </div>
-  )
-}
-
 export default function CharacterFullInfo({ character }: {character: character}) {
   return (
     <div className='flex'>
