@@ -33,8 +33,12 @@ body {
   @apply p-2 mt-2 mr-2 rounded-lg;
 }
 
-.button:hover {
+.hover-bg-color {
   background-color: var(--accent2);
+}
+
+.button:hover {
+  @apply hover-bg-color
 }
 
 nav {
@@ -48,6 +52,6 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--accent2);
+  @apply hover-bg-color
 }
 

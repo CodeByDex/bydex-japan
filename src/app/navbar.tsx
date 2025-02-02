@@ -14,7 +14,7 @@ export function NavBar() {
                 className={clsx(
                     '',
                     {
-                        'text-blue-600': pathName === "."
+                        'hover-bg-color': pathName === "/"
                     }
                 )}            >
                 Kanado
@@ -24,7 +24,7 @@ export function NavBar() {
                 className={clsx(
                     '',
                     {
-                        'text-blue-600': pathName === "./character"
+                        'hover-bg-color': pathName === "/character"
                     }
                 )}>
                 Characters
@@ -33,7 +33,7 @@ export function NavBar() {
                 className={clsx(
                     '',
                     {
-                        'text-blue-600': pathName === "./character"
+                        'hover-bg-color': pathName === "/quiz"
                     }
                 )}>
                 Quiz
