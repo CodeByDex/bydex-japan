@@ -278,7 +278,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['左'],
+    radical: ['散'],
     stroke: 3,
     note: "",
     JLPT: 5,
@@ -330,7 +330,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['寸'],
+    radical: ['須'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -461,7 +461,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['川'],
+    radical: ['州'],
     stroke: 3,
     note: "",
     JLPT: 5,
@@ -487,7 +487,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['手'],
+    radical: ['天'],
     stroke: 3,
     note: "",
     JLPT: 5,
@@ -540,7 +540,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['十'],
+    radical: ['奈'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -618,7 +618,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['根'],
+    radical: ['祢'],
     stroke: 3,
     note: "",
     JLPT: 5,
@@ -644,7 +644,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['之'],
+    radical: ['乃'],
     stroke: 1,
     note: "",
     JLPT: 5,
@@ -749,7 +749,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['戸'],
+    radical: ['部'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -775,7 +775,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['方'],
+    radical: ['保'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -802,7 +802,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['十'],
+    radical: ['末'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -854,7 +854,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['六'],
+    radical: ['牟'],
     stroke: 3,
     note: "",
     JLPT: 5,
@@ -880,7 +880,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['目'],
+    radical: ['女'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -933,7 +933,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['八'],
+    radical: ['也'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -985,7 +985,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['世'],
+    radical: ['与'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -1012,7 +1012,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['口'],
+    radical: ['良'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -1038,7 +1038,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['力'],
+    radical: ['利'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -1064,7 +1064,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['六'],
+    radical: ['流'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -1090,7 +1090,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['令'],
+    radical: ['礼'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -1116,7 +1116,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['口'],
+    radical: ['呂'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -1143,7 +1143,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['口'],
+    radical: ['和'],
     stroke: 3,
     note: "",
     JLPT: 5,
@@ -1195,7 +1195,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['小'],
+    radical: ['无'],
     stroke: 1,
     note: "",
     JLPT: 5,
