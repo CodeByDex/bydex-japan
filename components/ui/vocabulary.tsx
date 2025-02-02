@@ -2,7 +2,7 @@ import { reading } from '@lib/definitions';
 import React from 'react';
 
 
-export function VocabularyComponent({ reading }: { reading: reading; }) {
+export function MeaningComponent({ reading }: { reading: reading; }) {
   return (
     <div className='flex'>
       <div className='p-2'>
@@ -10,4 +10,14 @@ export function VocabularyComponent({ reading }: { reading: reading; }) {
       </div>
     </div>
   );
+}
+
+export function WordComponent({ reading, className }: { reading: reading, className: string }) {
+  return ( 
+    <div className={`items-center justify-center ${className}`}>
+        {reading.id === reading.kana ? <></> : <p className='text-xs'>{reading.kana}</p>}
+        <p>{reading.id}</p>
+        <p>{reading.romanji}</p>
+    </div>
+  )
 }

@@ -3,8 +3,7 @@
 import jstVocab from "../../../../public/data/vocabularyDatabase";
 import { reading } from "@lib/definitions";
 import FlashcardComponent from "@components/ui/flashcard";
-import { LargeCharacter } from "@components/ui/character";
-import { VocabularyComponent } from '@components/ui/vocabulary';
+import { MeaningComponent, WordComponent } from '@components/ui/vocabulary';
 import { useEffect, useState } from "react";
 
 function getRandomItem<T>(array: T[]): T {
@@ -34,8 +33,8 @@ export default function QuizPage() {
   return (
     <div>
       <FlashcardComponent
-        prompt={<LargeCharacter char={quizChar.id} className="" />}
-        answer={<VocabularyComponent reading={quizChar}  />}
+        prompt={<WordComponent reading={quizChar} className="" />}
+        answer={<MeaningComponent reading={quizChar}  />}
         showPrompt={showPrompt}
         setShowPrompt={setShowPrompt}
       />
