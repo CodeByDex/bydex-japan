@@ -14,7 +14,7 @@ export function NavBar() {
             <div>
                 <Link
                     href={"/"}
-                    className={clsx('', { 'hover-bg-color': pathName === "/character" })}>
+                    className={clsx('', { 'hover-bg-color': pathName === "/" })}>
                     Kanado
                 </Link>
             </div>
@@ -39,7 +39,7 @@ export function NavBar() {
             >
                 <Link
                     href={"/quiz"}
-                    className={clsx('', { 'hover-bg-color': pathName === "/quiz" })}>
+                    className={clsx('', { 'hover-bg-color': pathName.indexOf("/quiz") === 0 })}>
                     Quiz
                 </Link>
                 {navFocus === "quiz" && (
