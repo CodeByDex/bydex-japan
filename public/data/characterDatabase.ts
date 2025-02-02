@@ -181,10 +181,10 @@ const characters: character[] = [
     AP: true,
     examples: [
         {
-            id: "キャンプ",
-            kana: "キャンプ",
-            romanji: "kyanpu",
-            meaning: "camp"
+            id: "キッチン",
+            kana: "キッチン",
+            romanji: "kicchin",
+            meaning: "kitchen"
         }
     ]
 },
@@ -574,10 +574,10 @@ const characters: character[] = [
     AP: true,
     examples: [
         {
-            id: "ニコニコ",
-            kana: "ニコニコ",
-            romanji: "nikoniko",
-            meaning: "smiling"
+            id: "ニット",
+            kana: "ニット",
+            romanji: "nitto",
+            meaning: "knit wear"
         }
     ]
 },
@@ -593,17 +593,17 @@ const characters: character[] = [
         }
     ],
     radical: ['奴'],
-    stroke: 3,
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
     AP: true,
     examples: [
         {
-            id: "ヌード",
-            kana: "ヌード",
-            romanji: "nuudo",
-            meaning: "nude"
+            id: "ヌードル",
+            kana: "ヌードル",
+            romanji: "nuudoru",
+            meaning: "noodle"
         }
     ]
 },
@@ -619,7 +619,7 @@ const characters: character[] = [
         }
     ],
     radical: ['祢'],
-    stroke: 3,
+    stroke: 4,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -672,7 +672,7 @@ const characters: character[] = [
         }
     ],
     radical: ['八'],
-    stroke: 3,
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -698,7 +698,7 @@ const characters: character[] = [
         }
     ],
     radical: ['比'],
-    stroke: 3,
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -724,7 +724,7 @@ const characters: character[] = [
         }
     ],
     radical: ['不'],
-    stroke: 3,
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -734,7 +734,7 @@ const characters: character[] = [
             id: "フルーツ",
             kana: "フルーツ",
             romanji: "furuutsu",
-            meaning: "fruits"
+            meaning: "fruit"
         }
     ]
 },
@@ -750,7 +750,7 @@ const characters: character[] = [
         }
     ],
     radical: ['部'],
-    stroke: 2,
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -776,7 +776,7 @@ const characters: character[] = [
         }
     ],
     radical: ['保'],
-    stroke: 2,
+    stroke: 4,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -810,10 +810,10 @@ const characters: character[] = [
     AP: true,
     examples: [
         {
-            id: "マシン",
-            kana: "マシン",
-            romanji: "mashin",
-            meaning: "machine"
+            id: "マカロニ",
+            kana: "マカロニ",
+            romanji: "makaroni",
+            meaning: "macaroni"
         }
     ]
 },
@@ -855,17 +855,17 @@ const characters: character[] = [
         }
     ],
     radical: ['牟'],
-    stroke: 3,
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
     AP: true,
     examples: [
         {
-            id: "ムービー",
-            kana: "ムービー",
-            romanji: "muubii",
-            meaning: "movie"
+            id: "ムース",
+            kana: "ムース",
+            romanji: "muusu",
+            meaning: "moose"
         }
     ]
 },
@@ -907,7 +907,7 @@ const characters: character[] = [
         }
     ],
     radical: ['毛'],
-    stroke: 2,
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -941,10 +941,10 @@ const characters: character[] = [
     AP: true,
     examples: [
         {
-            id: "ヤバイ",
-            kana: "ヤバイ",
-            romanji: "yabai",
-            meaning: "dangerous; awesome (slang)"
+            id: "ヤンキー",
+            kana: "ヤンキー",
+            romanji: "yankii",
+            meaning: "delinquent"
         }
     ]
 },
@@ -986,7 +986,7 @@ const characters: character[] = [
         }
     ],
     radical: ['与'],
-    stroke: 2,
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1091,7 +1091,7 @@ const characters: character[] = [
         }
     ],
     radical: ['礼'],
-    stroke: 2,
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1117,7 +1117,7 @@ const characters: character[] = [
         }
     ],
     radical: ['呂'],
-    stroke: 2,
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1144,7 +1144,7 @@ const characters: character[] = [
         }
     ],
     radical: ['和'],
-    stroke: 3,
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1170,19 +1170,12 @@ const characters: character[] = [
         }
     ],
     radical: ['乎'],
-    stroke: 2,
+    stroke: 3,
     note: "This character is rarely used in modern Japanese, and is primarily used as a particle in writing.",
     JLPT: 5,
     grade: 1,
     AP: true,
-    examples: [
-        {
-            id: "ヲタク",
-            kana: "ヲタク",
-            romanji: "otaku",
-            meaning: "otaku (often used to refer to a person passionate about anime, manga, etc.)"
-        }
-    ]
+    examples: []
 },
 {
     id: "ン",
@@ -1196,7 +1189,7 @@ const characters: character[] = [
         }
     ],
     radical: ['无'],
-    stroke: 1,
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
