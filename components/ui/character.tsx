@@ -43,9 +43,9 @@ export default function CharacterFullInfo({ character }: { character: character 
 
 export function LargeCharacter({ char, className }: { char: string, className: string }) {
   return <div className={`items-center justify-center text-8xl ${className}`}>
-      <Link href={`/character/${char}`}>
+    <Link href={`/character/${char}`}>
       {char}
-  </Link>
+    </Link>
   </div>
 }
 
