@@ -3,8 +3,9 @@
 import React from 'react';
 import { useState } from 'react'
 import { character, reading } from '@lib/definitions';
+import Link from "next/link";
 
-export function ReadingComponent({ reading }: {reading: reading}) {
+export function ReadingComponent({ reading }: { reading: reading }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -31,7 +32,7 @@ export function ReadingComponent({ reading }: {reading: reading}) {
   )
 }
 
-export default function CharacterFullInfo({ character }: {character: character}) {
+export default function CharacterFullInfo({ character }: { character: character }) {
   return (
     <div className='flex'>
       <LargeCharacter className="flex p-4 w-1/3" char={character.id} />
@@ -42,7 +43,9 @@ export default function CharacterFullInfo({ character }: {character: character})
 
 export function LargeCharacter({ char, className }: { char: string, className: string }) {
   return <div className={`items-center justify-center text-8xl ${className}`}>
-    {char}
+      <Link href={`/character/${char}`}>
+      {char}
+  </Link>
   </div>
 }
 
