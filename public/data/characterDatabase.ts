@@ -1207,31 +1207,924 @@ const characters: character[] = [
 /********************************************************************************************/
 // #region Hiragana
 /*********************************************************************************************/
-    {
-        id: "か",
-        type: characterType.hiragana,
-        readings: [
-            {
-                id: "か",
-                kana: "か",
-                romanji: "ka",
-                type: readingType.kana,
-            }
-        ],
-        radical: ['加'],
-        stroke: 2,
-        note: "",
-        JLPT: 5,
-        grade: 1,
-        AP: true,
-        examples: [
-            {
-                id: "からて",
-                kana: "からて",
-                romanji: "karate",
-                meaning: "karate"
-            }]
-    },
+//aiueo
+{
+    id: "あ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "あ",
+            kana: "あ",
+            romanji: "a",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['阿'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "あめ",
+            kana: "あめ",
+            romanji: "ame",
+            meaning: "rain/candy"
+        }
+    ]
+},
+{
+    id: "い",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "い",
+            kana: "い",
+            romanji: "i",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['伊'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "いぬ",
+            kana: "いぬ",
+            romanji: "inu",
+            meaning: "dog"
+        }
+    ]
+},
+{
+    id: "う",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "う",
+            kana: "う",
+            romanji: "u",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['宇'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "うさぎ",
+            kana: "うさぎ",
+            romanji: "usagi",
+            meaning: "rabbit"
+        }
+    ]
+},
+{
+    id: "え",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "え",
+            kana: "え",
+            romanji: "e",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['江'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "えんぴつ",
+            kana: "えんぴつ",
+            romanji: "enpitsu",
+            meaning: "pencil"
+        }
+    ]
+},
+{
+    id: "お",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "お",
+            kana: "お",
+            romanji: "o",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['於'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "おちゃ",
+            kana: "おちゃ",
+            romanji: "ocha",
+            meaning: "tea"
+        }
+    ]
+},
+//kakikukeko
+{
+    id: "か",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "か",
+            kana: "か",
+            romanji: "ka",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['加'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "傘",
+            kana: "かさ",
+            romanji: "kasa",
+            meaning: "umbrella"
+        }
+    ]
+},
+{
+    id: "き",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "き",
+            kana: "き",
+            romanji: "ki",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['幾'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "狐",
+            kana: "きつね",
+            romanji: "kitsune",
+            meaning: "fox"
+        }
+    ]
+},
+{
+    id: "く",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "く",
+            kana: "く",
+            romanji: "ku",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['久'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "熊",
+            kana: "くま",
+            romanji: "kuma",
+            meaning: "bear"
+        }
+    ]
+},
+{
+    id: "け",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "け",
+            kana: "け",
+            romanji: "ke",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['介'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "煙",
+            kana: "けむり",
+            romanji: "kemuri",
+            meaning: "smoke"
+        }
+    ]
+},
+{
+    id: "こ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "こ",
+            kana: "こ",
+            romanji: "ko",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['己'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "小鳥",
+            kana: "ことり",
+            romanji: "kotori",
+            meaning: "small bird"
+        }
+    ]
+},
+//sasisuseso
+{
+    id: "さ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "さ",
+            kana: "さ",
+            romanji: "sa",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['散'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "皿",
+            kana: "さら",
+            romanji: "sara",
+            meaning: "plate"
+        }
+    ]
+},
+{
+    id: "し",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "し",
+            kana: "し",
+            romanji: "shi",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['之'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "仕事",
+            kana: "しごと",
+            romanji: "shigoto",
+            meaning: "work/job"
+        }
+    ]
+},
+{
+    id: "す",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "す",
+            kana: "す",
+            romanji: "su",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['須'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "酢",
+            kana: "す",
+            romanji: "su",
+            meaning: "vinegar"
+        }
+    ]
+},
+{
+    id: "せ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "せ",
+            kana: "せ",
+            romanji: "se",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['世'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "世界",
+            kana: "せかい",
+            romanji: "sekai",
+            meaning: "world"
+        }
+    ]
+},
+{
+    id: "そ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "そ",
+            kana: "そ",
+            romanji: "so",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['曽'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "空",
+            kana: "そら",
+            romanji: "sora",
+            meaning: "sky"
+        }
+    ]
+},
+//tatituteto
+{
+    id: "た",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "た",
+            kana: "た",
+            romanji: "ta",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['多'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "多分",
+            kana: "たぶん",
+            romanji: "tabun",
+            meaning: "maybe"
+        }
+    ]
+},
+{
+    id: "ち",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "ち",
+            kana: "ち",
+            romanji: "chi",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['千'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "千",
+            kana: "ち",
+            romanji: "chi",
+            meaning: "thousand"
+        }
+    ]
+},
+{
+    id: "つ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "つ",
+            kana: "つ",
+            romanji: "tsu",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['州'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "津波",
+            kana: "つなみ",
+            romanji: "tsunami",
+            meaning: "tsunami"
+        }
+    ]
+},
+{
+    id: "て",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "て",
+            kana: "て",
+            romanji: "te",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['天'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "天気",
+            kana: "てんき",
+            romanji: "tenki",
+            meaning: "weather"
+        }
+    ]
+},
+{
+    id: "と",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "と",
+            kana: "と",
+            romanji: "to",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['止'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "止まる",
+            kana: "とまる",
+            romanji: "tomaru",
+            meaning: "to stop"
+        }
+    ]
+},
+//naninuneno
+{
+    id: "な",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "な",
+            kana: "な",
+            romanji: "na",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['奈'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "名前",
+            kana: "なまえ",
+            romanji: "namae",
+            meaning: "name"
+        }
+    ]
+},
+{
+    id: "に",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "に",
+            kana: "に",
+            romanji: "ni",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['二'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "二人",
+            kana: "ふたり",
+            romanji: "futari",
+            meaning: "two people"
+        }
+    ]
+},
+{
+    id: "ぬ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "ぬ",
+            kana: "ぬ",
+            romanji: "nu",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['奴'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "布",
+            kana: "ぬの",
+            romanji: "nuno",
+            meaning: "cloth"
+        }
+    ]
+},
+{
+    id: "ね",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "ね",
+            kana: "ね",
+            romanji: "ne",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['祢'],
+    stroke: 4,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "猫",
+            kana: "ねこ",
+            romanji: "neko",
+            meaning: "cat"
+        }
+    ]
+},
+{
+    id: "の",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "の",
+            kana: "の",
+            romanji: "no",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['乃'],
+    stroke: 1,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "能力",
+            kana: "のうりょく",
+            romanji: "nouryoku",
+            meaning: "ability"
+        }
+    ]
+},
+// はひふへほ
+{
+    id: "は",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "は",
+            kana: "は",
+            romanji: "ha",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['八'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "花火",
+            kana: "はなび",
+            romanji: "hanabi",
+            meaning: "fireworks"
+        }
+    ]
+},
+{
+    id: "ひ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "ひ",
+            kana: "ひ",
+            romanji: "hi",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['比'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "光る",
+            kana: "ひかる",
+            romanji: "hikaru",
+            meaning: "to shine"
+        }
+    ]
+},
+{
+    id: "ふ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "ふ",
+            kana: "ふ",
+            romanji: "fu",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['不'],
+    stroke: 1,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "風呂",
+            kana: "ふろ",
+            romanji: "furo",
+            meaning: "bath"
+        }
+    ]
+},
+{
+    id: "へ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "へ",
+            kana: "へ",
+            romanji: "he",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['部'],
+    stroke: 1,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "部屋",
+            kana: "へや",
+            romanji: "heya",
+            meaning: "room"
+        }
+    ]
+},
+{
+    id: "ほ",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "ほ",
+            kana: "ほ",
+            romanji: "ho",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['保'],
+    stroke: 4,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "星空",
+            kana: "ほしぞら",
+            romanji: "hoshizora",
+            meaning: "starry sky"
+        }
+    ]
+},
+// まみむめも
+{
+    id: "ま",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "ま",
+            kana: "ま",
+            romanji: "ma",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['末'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "丸い",
+            kana: "まるい",
+            romanji: "marui",
+            meaning: "round"
+        }
+    ]
+},
+{
+    id: "み",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "み",
+            kana: "み",
+            romanji: "mi",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['三'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "水",
+            kana: "みず",
+            romanji: "mizu",
+            meaning: "water"
+        }
+    ]
+},
+{
+    id: "む",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "む",
+            kana: "む",
+            romanji: "mu",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['牟'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "無理",
+            kana: "むり",
+            romanji: "muri",
+            meaning: "impossible"
+        }
+    ]
+},
+{
+    id: "め",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "め",
+            kana: "め",
+            romanji: "me",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['女'],
+    stroke: 2,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "目標",
+            kana: "もくひょう",
+            romanji: "mokuhyou",
+            meaning: "goal"
+        }
+    ]
+},
+{
+    id: "も",
+    type: characterType.hiragana,
+    readings: [
+        {
+            id: "も",
+            kana: "も",
+            romanji: "mo",
+            type: readingType.kana,
+        }
+    ],
+    radical: ['毛'],
+    stroke: 3,
+    note: "",
+    JLPT: 5,
+    grade: 1,
+    AP: true,
+    examples: [
+        {
+            id: "森",
+            kana: "もり",
+            romanji: "mori",
+            meaning: "forest"
+        }
+    ]
+},
+
 // #endregion
 /********************************************************************************************/
 // #region Kanji
