@@ -32,7 +32,7 @@ export function ReadingComponent({ reading }: { reading: reading }) {
   )
 }
 
-export default function CharacterFullInfo({ character }: { character: character }) {
+export function CharacterFullInfo({ character }: { character: character }) {
   return (
     <div className='flex'>
       <Link href={`/character/${character.id}`} className="items-center justify-center flex p-4 w-1/3">

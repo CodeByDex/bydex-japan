@@ -14,7 +14,7 @@ function getRandomItem<T>(array: T[]): T {
 export default function QuizPage() {
   const [quizChar, setQuizChar] = useState<reading | null>(null);
   const [mounted, setMounted] = useState(false);
-  const [showPrompt, setShowPrompt] = useState<boolean>((Math.random() < 0.5));
+  const [showPrompt, setShowPrompt] = useState<boolean>(true);
 
   useEffect(() => {
     setQuizChar(getRandomItem(jstVocab));
@@ -27,14 +27,15 @@ export default function QuizPage() {
 
   const loadNewCard = () => {
     setQuizChar(getRandomItem(jstVocab)); // Load a random character
-    setShowPrompt((Math.random() < 0.5)); // Show the prompt again for the new card
+    setShowPrompt(true); // Show the prompt again for the new card
   };
 
   return (
     <div>
+
       <FlashcardComponent
         prompt={<WordComponent reading={quizChar} className="" />}
-        answer={<MeaningComponent reading={quizChar}  />}
+        answer={<MeaningComponent reading={quizChar} />}
         showPrompt={showPrompt}
         setShowPrompt={setShowPrompt}
       />
