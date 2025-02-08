@@ -35,17 +35,17 @@ export function ReadingComponent({ reading }: { reading: reading }) {
 export default function CharacterFullInfo({ character }: { character: character }) {
   return (
     <div className='flex'>
-      <LargeCharacter className="flex p-4 w-1/3" char={character.id} />
+      <Link href={`/character/${character.id}`} className="items-center justify-center flex p-4 w-1/3">
+        <LargeCharacter className="" char={character.id} />
+      </Link>
       <CharacterInfo className='p-4 w-2/3' character={character} />
     </div >
   );
 }
 
 export function LargeCharacter({ char, className }: { char: string, className: string }) {
-  return <div className={`items-center justify-center text-8xl ${className}`}>
-    <Link href={`/character/${char}`}>
-      {char}
-    </Link>
+  return <div className={` text-8xl ${className}`}>
+    {char}
   </div>
 }
 
