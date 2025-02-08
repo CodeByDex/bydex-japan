@@ -76,10 +76,10 @@ const characters: character[] = [
     AP: true,
     examples: [
         {
-            id: "ウサギ",
-            kana: "ウサギ",
-            romanji: "usagi",
-            meaning: "rabbit"
+            id: "ウール",
+            kana: "ウール",
+            romanji: "uuru",
+            meaning: "wool"
         }
     ]
 },
@@ -1219,18 +1219,18 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['阿'],
-    stroke: 2,
+    radical: ['安'],
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
     AP: true,
     examples: [
         {
-            id: "あめ",
-            kana: "あめ",
-            romanji: "ame",
-            meaning: "rain/candy"
+            id: "朝日",
+            kana: "あさ",
+            romanji: "asa",
+            meaning: "morning"
         }
     ]
 },
@@ -1245,7 +1245,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['伊'],
+    radical: ['以'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -1253,7 +1253,7 @@ const characters: character[] = [
     AP: true,
     examples: [
         {
-            id: "いぬ",
+            id: "犬",
             kana: "いぬ",
             romanji: "inu",
             meaning: "dog"
@@ -1272,7 +1272,7 @@ const characters: character[] = [
         }
     ],
     radical: ['宇'],
-    stroke: 3,
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1297,18 +1297,18 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['江'],
-    stroke: 3,
+    radical: ['衣'],
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
     AP: true,
     examples: [
         {
-            id: "えんぴつ",
-            kana: "えんぴつ",
-            romanji: "enpitsu",
-            meaning: "pencil"
+            id: "絵",
+            kana: "え",
+            romanji: "e",
+            meaning: "drawing"
         }
     ]
 },
@@ -1331,10 +1331,10 @@ const characters: character[] = [
     AP: true,
     examples: [
         {
-            id: "おちゃ",
-            kana: "おちゃ",
-            romanji: "ocha",
-            meaning: "tea"
+            id: "折り紙",
+            kana: "おりがみ",
+            romanji: "origami",
+            meaning: "origami"
         }
     ]
 },
@@ -1351,7 +1351,7 @@ const characters: character[] = [
         }
     ],
     radical: ['加'],
-    stroke: 2,
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1403,7 +1403,7 @@ const characters: character[] = [
         }
     ],
     radical: ['久'],
-    stroke: 2,
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1428,7 +1428,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['介'],
+    radical: ['計'],
     stroke: 3,
     note: "",
     JLPT: 5,
@@ -1481,7 +1481,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['散'],
+    radical: ['左'],
     stroke: 3,
     note: "",
     JLPT: 5,
@@ -1508,7 +1508,7 @@ const characters: character[] = [
         }
     ],
     radical: ['之'],
-    stroke: 3,
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1533,7 +1533,7 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['須'],
+    radical: ['寸'],
     stroke: 2,
     note: "",
     JLPT: 5,
@@ -1560,7 +1560,7 @@ const characters: character[] = [
         }
     ],
     radical: ['世'],
-    stroke: 2,
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1586,7 +1586,7 @@ const characters: character[] = [
         }
     ],
     radical: ['曽'],
-    stroke: 2,
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1612,8 +1612,8 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['多'],
-    stroke: 3,
+    radical: ['太'],
+    stroke: 4,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1638,8 +1638,8 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['千'],
-    stroke: 3,
+    radical: ['知'],
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1664,8 +1664,8 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['州'],
-    stroke: 3,
+    radical: ['川'],
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1691,7 +1691,7 @@ const characters: character[] = [
         }
     ],
     radical: ['天'],
-    stroke: 3,
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1744,7 +1744,7 @@ const characters: character[] = [
         }
     ],
     radical: ['奈'],
-    stroke: 2,
+    stroke: 4,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1769,18 +1769,18 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['二'],
-    stroke: 2,
+    radical: ['仁'],
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
     AP: true,
     examples: [
         {
-            id: "二人",
-            kana: "ふたり",
-            romanji: "futari",
-            meaning: "two people"
+            id: "日本語",
+            kana: "にほんご",
+            romanji: "nihongo",
+            meaning: "Japanese (language)"
         }
     ]
 },
@@ -1822,7 +1822,7 @@ const characters: character[] = [
         }
     ],
     radical: ['祢'],
-    stroke: 4,
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1874,8 +1874,8 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['八'],
-    stroke: 2,
+    radical: ['波'],
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1901,7 +1901,7 @@ const characters: character[] = [
         }
     ],
     radical: ['比'],
-    stroke: 2,
+    stroke: 1,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -1927,7 +1927,7 @@ const characters: character[] = [
         }
     ],
     radical: ['不'],
-    stroke: 1,
+    stroke: 4,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -2006,7 +2006,7 @@ const characters: character[] = [
         }
     ],
     radical: ['末'],
-    stroke: 2,
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -2031,8 +2031,8 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['三'],
-    stroke: 3,
+    radical: ['美'],
+    stroke: 2,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -2057,8 +2057,8 @@ const characters: character[] = [
             type: readingType.kana,
         }
     ],
-    radical: ['牟'],
-    stroke: 2,
+    radical: ['武'],
+    stroke: 3,
     note: "",
     JLPT: 5,
     grade: 1,
@@ -2091,10 +2091,10 @@ const characters: character[] = [
     AP: true,
     examples: [
         {
-            id: "目標",
-            kana: "もくひょう",
-            romanji: "mokuhyou",
-            meaning: "goal"
+            id: "眼鏡",
+            kana: "めがね",
+            romanji: "megane",
+            meaning: "eye glasses"
         }
     ]
 },
