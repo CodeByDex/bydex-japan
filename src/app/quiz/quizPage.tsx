@@ -1,7 +1,7 @@
 "use client";
 
 import FlashcardComponent from "@components/ui/flashcard";
-import { LargeCharacter, CharacterInfo } from "@components/ui/character";
+import { LargeCharacter, CharacterFullInfo } from "@components/ui/character";
 import { useEffect, useState } from "react";
 import { character } from "@lib/definitions";
 
@@ -37,7 +37,7 @@ export default function QuizPage({ filteredCharacters }: QuizPageProps) {
     <div>
       <FlashcardComponent
         prompt={<LargeCharacter char={quizChar.id} className="" />}
-        answer={<CharacterInfo character={quizChar} className="" />}
+        answer={<CharacterFullInfo character={quizChar} />}
         showPrompt={showPrompt}
         setShowPrompt={setShowPrompt}
       />
